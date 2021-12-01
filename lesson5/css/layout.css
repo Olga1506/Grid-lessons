@@ -1,0 +1,70 @@
+
+
+.d-grid{
+    display: grid;
+
+}
+
+.align-self-item{
+    grid-template: repeat(3, 100px)/1fr 1fr;
+    align-items: start;
+    justify-items: center;
+}
+
+.align-self-item div:nth-child(even){
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.align-self-item div:nth-child(3){
+    align-self: center;
+    justify-self: end;
+}
+
+
+.align-self-item div:nth-child(5){
+    align-self: center;
+    justify-self: start;
+}
+
+.place-item{
+    grid-template: 150px 150px 150px/1fr 1fr;
+    /*align-items: center;*/
+    /*justify-items: start;*/
+    place-items: center start;
+}
+
+.place-content{
+    height: 400px;
+    grid-template: 100px 100px 100px/100px 100px;
+    /*align-content: space-around;*/
+    /*justify-content: space-between;*/
+    place-content: space-around space-between;
+}
+
+.min-max-content{
+    grid-template-columns: 1fr max-content 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
