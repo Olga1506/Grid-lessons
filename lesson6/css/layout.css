@@ -1,0 +1,131 @@
+
+.d-grid {
+    display: grid;
+
+}
+
+.order {
+    grid-template: repeat(3, 100px)/1fr 1fr;
+}
+
+/*.order div:nth-child(1){*/
+/*    order: 1;*/
+/*}*/
+
+
+/*.order div:nth-child(6){*/
+/*    order: -1;*/
+/*}*/
+
+
+.order div:nth-child(1) {
+    order: 2;
+}
+
+
+.order div:nth-child(2) {
+    order: 1;
+}
+
+
+.order div:nth-child(3) {
+    order: 0;
+}
+
+
+.order div:nth-child(4) {
+    order: -1;
+}
+
+
+.order div:nth-child(5) {
+    order: -2;
+}
+
+
+.order div:nth-child(6) {
+    order: -3;
+}
+
+.position {
+    grid-template: repeat(2, auto)/repeat(2, auto);
+    position: relative;
+}
+
+.position div:nth-child(1) {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.position-relative {
+    position: relative;
+    grid-template: repeat(2, 1fr 1fr)/1fr 300px;
+}
+
+.position-relative div:nth-child(2) {
+    position: relative;
+    top: 150%;
+    z-index: -1;
+}
+
+.position-fixed {
+    grid-template: auto auto/1fr 1fr;
+    height: 700px;
+}
+
+.position-fixed div:nth-child(1) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template: 80px 1fr 80px/1fr;
+    grid-template-areas:
+            "header"
+            "main"
+            "footer";
+}
+
+header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    position: sticky;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
